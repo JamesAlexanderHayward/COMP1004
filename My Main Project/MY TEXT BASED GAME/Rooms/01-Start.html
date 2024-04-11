@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text based dungeon crawler game!</title>
+    <style>
+        h1, h2 {text-align: center;}
+        .game-content {
+            display: none;
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+        .button-container button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color:red">Text based dungeon crawler game!</h1>
+    <div class="button-container">
+        <button onclick="showGame()">Start the game!</button>
+    </div>
+    
+    <div class="game-content">
+        <h1>Text describing the level</h1>
+        <h2>What has a head, a tail, is brown and has no legs?</h2>
+
+        <a href="Room2.html">
+            <button>Penny</button>
+        </a>
+        <a href="WRONGANSWER!.html">
+            <button>Dog</button>
+        </a>
+        <a href="WRONGANSWER!.html">
+            <button>Snake</button>
+        </a>
+        <a href="WRONGANSWER!.html">
+            <button>Fish</button>
+        </a>
+    </div>
+
+    <script>
+        function showGame() {
+            
+            document.querySelector('.button-container').style.display = 'none';
+            document.querySelector('.game-content').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
