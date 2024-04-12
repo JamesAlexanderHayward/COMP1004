@@ -4,14 +4,26 @@
 <head>
     <title>Text based dungeon crawler game!</title>
     <style>
-        h1, h2 {text-align: center;}
+        body {
+            background-image: url('Plains.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: red;
+        }
+
         .game-content {
             display: none;
         }
-        
+
         .button-container {
             text-align: center;
         }
+
         .button-container button {
             margin: 10px;
         }
@@ -20,68 +32,15 @@
 
 <body>
 
-    <h1 style="color:red">Welcome to Age!</h1>
+    <h1>Welcome to Age!</h1>
+    <h2>This is a text based dungeon crawler game, once you have read the clues, you will have 4 choices!</h2>
+    <h2>Choose the correct option or be sent straight back to the start!</h2>
+    <h2>Time with your friends to see who can complete the game fastest!</h2>
     <div class="button-container">
-        <button onclick="showGame()">Start the game!</button>
-    </div>
-    
-    <div class="game-content" id="room1">
-        <h1>Text describing the level</h1>
-        <h2>What has a head, a tail, is brown and has no legs?</h2>
-
-        <a href="03-Room2.html">
-            <button>Penny</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>Dog</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>Snake</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>Fish</button>
+        <a href="02-Room1.html">
+            <button>Start the Game</button>
         </a>
     </div>
-
-    <div class="game-content" id="room2">
-        <h1>Text describing the level</h1>
-        <h2>"I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?"</h2>
-
-        <a href="WRONGANSWER!.html">
-            <button>Book</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>River</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>Whistle</button>
-        </a>
-    </div>
-
-    <div class="game-content" id="room3">
-        <h1>Text describing the level</h1>
-        <h2>I am the rare occasion where today comes before tomorrow, what Am I?</h2>
-
-        <a href="WRONGANSWER!.html">
-            <button>Yesterday</button>
-        </a>
-        <a href="05-Room4.html">
-            <button>Dictionary</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>Calendar</button>
-        </a>
-        <a href="WRONGANSWER!.html">
-            <button>Sundial</button>
-        </a>
-    </div>
-
-    <script>
-        function showGame() {
-            document.querySelector('.button-container').style.display = 'none';
-            document.getElementById('room1').style.display = 'block';
-        }
-    </script>
 
 </body>
 
